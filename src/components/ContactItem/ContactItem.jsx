@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './ContactItem.module.css';
 
-const ContactItem = ({ name, number, id, deleteContact }) => {
+export default function ContactItem  ({ name, number, id, deleteContact })  {
   return (
     <li key={id}>
       <div className={css.li}>
@@ -23,4 +23,3 @@ ContactItem.propTypes = {
   deleteContact: PropTypes.func.isRequired,
 };
 
-export default ContactItem;

@@ -28,13 +28,13 @@ export default function ContactList () {
   return (
   <div className={css.contactCard}>
     <ul className={css.contact}>{contactsList.length > 0 ? (
-        contactsList.map(({ id, name, number }) => {
+        contactsList.map(({ id, name, phone }) => {
           return (
             <ContactItem
               key={id}
               id={id}
               name={name}
-              number={number}
+              number={phone}
               deleteContact={handleDeleteContact}
             />
           );

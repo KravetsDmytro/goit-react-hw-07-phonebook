@@ -79,7 +79,6 @@ const App = () => {
       <ContactForm  />
       <Filter  />
       <ContactList  />
-<p>кількість контактів </p>
 
     </div>
   );
