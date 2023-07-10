@@ -6,8 +6,9 @@ export default function ContactItem  ({ name, number, id, deleteContact })  {
     <li key={id}>
       <div className={css.li}>
         <p>
-          {name}: {number}
+          {name}:
         </p>
+<p className={css.number}> {number} </p>
         <button className={css.buttonDel} type="button" onClick={() => deleteContact(id)}>
           Delete
         </button>
